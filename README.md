@@ -1,0 +1,1 @@
+# rabbimq-playground
