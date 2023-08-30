@@ -1,6 +1,5 @@
-package com.soko.rabbitmqplayground.pure_kotlin
+package com.soko.rabbitmqplayground.pure_kotlin.tutorial1
 
-import com.rabbitmq.client.AMQP
 import com.rabbitmq.client.ConnectionFactory
 
 const val QUEUE_NAME = "hello"

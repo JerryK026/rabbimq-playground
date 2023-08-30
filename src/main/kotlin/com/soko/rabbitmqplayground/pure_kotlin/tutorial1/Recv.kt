@@ -1,4 +1,4 @@
-package com.soko.rabbitmqplayground.pure_kotlin
+package com.soko.rabbitmqplayground.pure_kotlin.tutorial1
 
 import com.rabbitmq.client.ConnectionFactory
 import com.rabbitmq.client.Delivery
