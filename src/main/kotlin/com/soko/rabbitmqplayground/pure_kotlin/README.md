@@ -6,6 +6,21 @@
 Send : publisher  
 Recv : consumer
 
+# 알아야 하는 개념
+Producer : 메시지를 보내는 프로그램  
+![producer](../images/producer.png)  
+
+Queue : RabbiMQ에서 메시지를 보관하는 버퍼. 메시지는 큐에 저장되고, 컨슈머가 큐에서 메시지를 가져와서 처리한다.   
+- 우체통에 편지를 넣어놓으면 편지 받은 사람이 가져가는 것과 같다  
+
+![queue](../images/queue.png)  
+
+Consumer : 메시지를 받기 위해 기다리는 프로그램  
+![consumer](../images/consumer.png)  
+
+메시지 전송도  
+![producer to consumer](../images/producer2consumer.png)
+
 ```
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
