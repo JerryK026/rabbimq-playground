@@ -213,6 +213,8 @@ fun doWork() {
 
 rabbitMQ는 기본적으로 round-robin 방식으로 메시지를 전달한다. 따라서 worker가 모두 동일한 작업량을 처리한다는 보장이 없다. 이를 해결하기 위해 `prefetchCount`를 사용한다.
 
+![prefetch count](../../images/tutorial2-prefetch.png)
+
 prefetchCount는 consumer가 unack 메시지를 받을 수 있는 최대 개수를 의미한다. 따라서 consumer가 unack 메시지를 처리하고 ack를 보내기 전까지는 다른 메시지를 받지 않는다.
 
 만약 모든 consumer가 바쁘다면 worker를 추가하던가 다른 전략을 세울 수 있다.
